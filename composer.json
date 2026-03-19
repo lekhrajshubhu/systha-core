@@ -1,0 +1,21 @@
+{
+  "name": "systha/core",
+  "description": "Shared core package for Systha panels",
+  "type": "library",
+  "license": "proprietary",
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Systha\\Core\\": "src/",
+      "Systha\\Core\\Database\\Seeders\\": "database/seeders/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Systha\\Core\\CoreServiceProvider"
+      ]
+    }
+  }
+}
